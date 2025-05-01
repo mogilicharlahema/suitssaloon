@@ -75,6 +75,7 @@
     line-height: 1.6;
     color: #555; /* Slightly lighter grey */
     margin-bottom: 0.6rem;
+    cursor: pointer;
   }
   
   .location-text strong {
@@ -185,6 +186,7 @@
       font-size: 0.85rem;
       line-height: 1.5;
       margin-bottom: 0.5rem;
+      cursor: pointer;
     }
   
     .location-map-container {

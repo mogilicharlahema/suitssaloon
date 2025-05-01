@@ -51,10 +51,10 @@ const ClientSection = () => {
   const currentClient = clientsData[currentIndex];
 
   return (
-    // Use a Fragment or a container div if needed for structure
+   
     <>
       <h1 className="client-title">See What Our Clients Says</h1>
-      {/* This div now only contains the testimonial part */}
+   
       <div className="client-section">
         <div className="carousel-container">
           <button
@@ -62,15 +62,15 @@ const ClientSection = () => {
             className="carousel-button prev-button"
             aria-label="Previous testimonial"
           >
-            ❮ {/* Left arrow entity */}
+            ❮ 
           </button>
 
           <div className="testimonial-content">
             {currentClient ? (
               <>
-                {/* Removed quotes from here, added via CSS for styling consistency */}
+               
                 <p className="testimonial-text">{currentClient.testimonial}</p>
-                {/* Removed hyphen from here, added via CSS for styling consistency */}
+               
                 <p className="testimonial-author">{currentClient.name}</p>
               </>
             ) : (
@@ -83,7 +83,7 @@ const ClientSection = () => {
              className="carousel-button next-button"
              aria-label="Next testimonial"
           >
-             ❯ {/* Right arrow entity */}
+             ❯
           </button>
         </div>
       </div>

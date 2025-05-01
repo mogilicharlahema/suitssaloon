@@ -61,9 +61,9 @@ const FooterSection = () => {
             </div>
 
             <div className="footer-copyright">
-            
-                <p>@2024 The Suits Salon & Spa. All rights reserved</p>
-            </div>
+    <p>&copy; 2021 The Suits Salon & Spa. All rights reserved</p>
+</div>
+
         </footer>
     );
 };

@@ -30,14 +30,16 @@ import BookAppointment from "./Components/Appointment";
 import OffersSection from "./Components/Offers";
 import OffersViewSection from "./Components/OffersView";
 import TermsAndConditions from "./Components/Terms";
+import ScrollToTop from "./Components/Scrolltop";
 
-// import MenHairColor from "./Components/MenHairColor";
-// import MenHairWash from "./Components/MenHairWash";
+import MenHairColor from "./Components/MenHairColor";
+import MenHairWash from "./Components/MenHairWash";
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <ScrollToTop></ScrollToTop>
 
       <Routes>
        
@@ -80,17 +82,14 @@ function App() {
         <Route path="/services/mens-facial" element={<MenFacial />} />
         <Route path="/services/mens-spa" element={<MenSpa />} />
  
-        {/* <Route path="/services/mens-hair-color" element={<MenHairColor />} /> */}
-        {/* <Route path="/services/mens-hair-wash" element={<MenHairWash />} /> */}
+        <Route path="/services/mens-hair-color" element={<MenHairColor />} />
+        <Route path="/services/mens-hair-wash" element={<MenHairWash />} />
 
 
-        {/* --- Remove Redundant /navservices/* Service Routes --- */}
-        {/* These are no longer needed as NavServiceSection links directly to /services/* */}
-        {/* <Route path="/navservices/Shave" element={<MenShave />} /> ... etc ... */}
+       
 
       </Routes>
 
-      {/* Footer should be outside Routes if you want it on every page */}
       <FooterSection />
     </Router>
   );

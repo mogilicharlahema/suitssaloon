@@ -31,7 +31,7 @@
   border: none;
 }
 
-/* Tablets (≤ 1024px) */
+
 @media (max-width: 1024px) {
   .book-btn {
     top: 78%;
@@ -42,24 +42,33 @@
   }
 }
 
-/* Large Phones (≤ 768px) */
+
 @media (max-width: 768px) {
-  .book-btn {
+  .hero-book-btn {
     top: 84%;
     left: 60%;
     font-size: 16px;
     padding: 10px 18px;
     width: auto;
+   
+  }
+  .hero-pic{
+    margin-left: -15px;
+    margin-top: -20px;
   }
 }
 
-/* Small Phones (≤ 480px) */
+
 @media (max-width: 480px) {
-  .book-btn {
-    top: 97%;
-    left: 50%;
+  .hero-book-btn {
+    top: 82%;
+    left: 70%;
     font-size: 14px;
-    padding: 8px 16px;
-    width: 44%;
+    /* padding: 8px 16px; */
+    width: 54%;
+  }
+  .hero-pic{
+    margin-left: -20px;
+    margin-top: -10px;
   }
 }
