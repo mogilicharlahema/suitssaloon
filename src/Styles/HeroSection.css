@@ -1,0 +1,65 @@
+.hero-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-pic {
+  height: auto;
+  width: 104vw;
+  object-fit: cover;
+  display: block;
+  margin-left: -40px;
+  margin-top: -40px;
+}
+
+
+.hero-book-btn {
+  position: absolute;
+  top: 87%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  background-color: #403D2A;
+  color: #E1B650;
+  border-radius: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .book-btn {
+    top: 78%;
+    left: 65%;
+    font-size: 18px;
+    padding: 10px 20px;
+    width: auto;
+  }
+}
+
+/* Large Phones (≤ 768px) */
+@media (max-width: 768px) {
+  .book-btn {
+    top: 84%;
+    left: 60%;
+    font-size: 16px;
+    padding: 10px 18px;
+    width: auto;
+  }
+}
+
+/* Small Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .book-btn {
+    top: 97%;
+    left: 50%;
+    font-size: 14px;
+    padding: 8px 16px;
+    width: 44%;
+  }
+}

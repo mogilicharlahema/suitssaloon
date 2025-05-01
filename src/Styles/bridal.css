@@ -1,0 +1,252 @@
+
+
+.bridal-package-container {
+    max-width: 900px;
+    margin: -8px auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    box-sizing: border-box;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #3a3a3a;
+    margin-bottom: 30px;
+    font-weight: 600;
+    margin-top: -45px;
+}
+
+.image-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.left-image {
+    flex: 1.5;
+    min-width: 0;
+}
+
+.right-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+}
+
+.image-section img {
+    width: 76%;
+    height: 477px;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.right-images img {
+    height: 234px;
+    width: 120%;
+    margin-left: -120px;
+    border-radius: 20px;
+}
+
+.bridal-include-section {
+    margin-bottom: 40px;
+}
+
+.bridal-include-section h2 {
+    font-size: 1.8rem;
+    color: #3a3a3a;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.bridal-include-section ul {
+    padding-left: 25px;
+    margin: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bridal-include-section li {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 18px;
+}
+
+.menu-section {
+    margin-bottom: 40px;
+}
+
+.menu-section h2 {
+    font-size: 1.8rem;
+    color: #3a3a3a;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.menu-items {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+    /* border-bottom: 1px solid #eee; */
+    line-height: 1.4;
+}
+
+.service-name {
+    flex-basis: 60%;
+    text-align: left;
+    color: #444;
+    padding-right: 10px;
+}
+
+.dashes {
+    color: #aaa;
+    white-space: nowrap;
+    padding: 0 10px;
+    font-weight: lighter;
+}
+
+.service-price {
+    font-weight: 600;
+    color: #3a3a3a;
+    white-space: nowrap;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.appointment-button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 30px;
+    background-color: #403D2A;
+    color: #E1B650;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.appointment-button:hover {
+    background-color: #404040;
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    .main-title {
+      font-size: 2rem;
+    }
+
+    .image-section {
+      flex-direction: column;
+    }
+
+    .left-image, .right-images {
+      flex: none;
+      width: 100%;
+    }
+
+    .right-images img {
+      height: auto;
+      max-height: 300px;
+    }
+
+    .include-section h2, .menu-section h2 {
+      font-size: 1.6rem;
+    }
+
+    .include-section ul {
+       max-width: 90%;
+       padding-left: 20px;
+    }
+
+    .menu-items {
+       max-width: 100%;
+    }
+
+    .service-name {
+        flex-basis: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+     .bridal-package-container {
+        padding: 15px;
+        margin: 20px auto;
+     }
+
+     .main-title {
+       font-size: 1.8rem;
+       margin-bottom: 20px;
+     }
+
+     .image-section, .include-section, .menu-section {
+       margin-bottom: 30px;
+     }
+
+     .include-section h2, .menu-section h2 {
+       font-size: 1.4rem;
+     }
+
+     .include-section li {
+        font-size: 0.95rem;
+     }
+
+     .menu-item {
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       padding-bottom: 10px;
+       margin-bottom: 15px;
+     }
+
+      .service-name {
+          flex-basis: 100%;
+          margin-bottom: 5px;
+          text-align: left;
+          padding-right: 0;
+          margin-right: 0;
+      }
+
+      .dashes {
+          order: 2;
+          flex-grow: 1;
+          text-align: left;
+          padding: 0 5px 0 0;
+          color: transparent;
+          border-bottom: 1px dashed #ccc;
+          margin: 0 10px 0 0;
+          position: relative;
+          top: -4px;
+      }
+
+      .service-price {
+          order: 3;
+          text-align: right;
+          padding-left: 10px;
+          margin-left: auto;
+      }
+
+     .appointment-button {
+       padding: 10px 25px;
+       font-size: 0.95rem;
+       width: 80%;
+       max-width: 300px;
+     }
+}

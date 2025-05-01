@@ -1,0 +1,283 @@
+
+  
+  .facial-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+  
+    border-radius: 8px;
+  }
+  
+  .facial-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+  }
+  .image-grid {
+      display: grid;
+     
+      grid-template-columns: 1fr 1fr; 
+    
+      grid-template-rows: auto auto;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+    
+  
+    .image-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+    }
+    
+    .img-large {
+      grid-row: 1 / span 2;
+    }
+    
+    .img-small-top {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+    
+    .img-small-bottom {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+    
+   
+  .include-section {
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+  
+  .include-section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #403D2A;
+    margin-bottom: 25px;
+  }
+  
+  .include-section ul {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .include-section li {
+    margin-bottom: 15px;
+    padding-left: 60px;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1;
+    color: #403D2A;
+  }
+  
+  .include-section li::before {
+ 
+    color: #8a6d3b;
+    font-weight: bold;
+    font-size: 1.5em;
+    position: absolute;
+    left: 4%;
+    top: -2px;
+  }
+  
+  .menu-section {
+    margin-bottom: 40px;
+  }
+  
+  .menu-section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #403D2A;
+    margin-bottom: 30px;
+  }
+  .dots-dashes{
+    color: #aaa;
+    white-space: nowrap;
+    padding: 0 10px;
+    font-weight: lighter;
+  }
+  .menu-items {
+    padding: 0 10px;
+  }
+  
+  .menu-item {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .item-name {
+    color:#403D2A;
+    font-weight: 500;
+    /* flex-shrink: 1; */
+    flex-basis: 60%;
+    flex-grow: 0;        
+    flex-shrink: 0; 
+    padding-right: 10px;
+  }
+  
+  .item-sub {
+    display: block;
+    font-size: 0.85em;
+    font-weight: 400;
+    color:#403D2A;
+    margin-top: 2px;
+  }
+  
+  .dots-dashes {
+  
+    flex-shrink: 0;
+   
+    margin: 0 10px;
+    white-space:nowrap;
+    /* position: relative;
+    top: -4px;
+    height: 1px; */
+  }
+  
+  .item-price {
+    margin-left: auto;      /* This pushes the price to the end of the line */
+    flex-shrink: 0;         /* Prevent price from shrinking */
+    color:#403D2A;
+    font-weight: 600;
+    white-space: nowrap;
+    padding-left: 10px;     /* Space between dots and price */
+    text-align: right;
+  }
+  
+  .book-button {
+    display: block;
+    margin: 30px auto 10px auto;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #403D2A;
+    color: #E1B650;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  
+  
+  @media (max-width: 992px) {
+    .facial-container {
+        max-width: 720px;
+    }
+    .facial-title {
+        font-size: 2.2rem;
+    }
+    .include-section h2, .menu-section h2 {
+        font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .facial-container {
+        padding: 15px;
+    }
+    .facial-title {
+        font-size: 2rem;
+    }
+    .image-grid {
+        gap: 10px;
+    }
+    .include-section h2, .menu-section h2 {
+        font-size: 1.5rem;
+    }
+    .include-section ul {
+        padding-left: 10px;
+    }
+    .include-section li {
+        font-size: 0.95rem;
+    }
+    .menu-item {
+        font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .facial-container {
+        padding: 10px;
+        margin: 10px;
+        width: auto;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .facial-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .image-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    .img-large {
+        grid-row: auto;
+    }
+    .img-small-top, .img-small-bottom {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .include-section {
+        margin-bottom: 30px;
+        padding: 0 5px;
+    }
+    .include-section h2, .menu-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    .include-section ul {
+        padding-left: 5px;
+    }
+    .include-section li {
+        font-size: 0.9rem;
+        padding-left: 20px;
+        margin-bottom: 12px;
+    }
+    .include-section li::before {
+        font-size: 1.3em;
+    }
+    .menu-section {
+        margin-bottom: 30px;
+    }
+    .menu-items {
+      padding: 0;
+    }
+    .menu-item {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    .item-name {
+        padding-right: 5px;
+    }
+    .item-dots {
+        margin: 0 5px;
+        top: -3px;
+    }
+    .item-price {
+        padding-left: 5px;
+    }
+    .book-button {
+        width: 80%;
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+  }
+  

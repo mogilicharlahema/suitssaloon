@@ -1,0 +1,129 @@
+.nail-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: #403D2A;
+}
+
+
+
+.nail-img1 {
+    height: 459px;
+    position: relative;
+    left: 23%;
+    width: 25%;
+}
+
+.nail-img2 {
+    height: 225px;
+    position: relative;
+    left: 24%;
+    width: 24%;
+    top: -118px;
+}
+
+.nail-img3 {
+    height: 225px;
+    position: relative;
+    top: 118px;
+    width: 24%;
+}
+
+.nail-art-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #403D2A;
+    text-align: center;
+}
+
+.nail-list {
+    text-align: left;
+    padding-left: 400px;
+    margin-bottom: 30px;
+    color: #403D2A;
+    font-size: 20px;
+}
+
+.menu-text {
+    text-align: center;
+    color: #403D2A;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+.serivcess-list li {
+    color: #403D2A;
+}
+
+.table-container {
+    margin: auto;
+    width: 90%;
+    max-width: 700px;
+    border-collapse: collapse;
+    color: #403D2A;
+    font-family: sans-serif;
+}
+
+.table-container th,
+.table-container td {
+    padding: 10px 15px;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+.table-container thead th {
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 15px;
+    border: none;
+}
+
+.header-item {
+    text-align: left;
+    width: 50%;
+}
+
+.header-price {
+    text-align: right;
+    width: 25%;
+}
+
+.menu-item-name {
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.menu-item-price {
+    text-align: right;
+    font-weight: 500;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.table-container tbody tr td {
+    padding-top: 6px;
+    padding-bottom: 9px;
+}
+
+.table-container tbody tr:last-child td {
+    border-bottom: none;
+}
+.nail-book-button{
+    background-color: #403D2A;
+    color: #E1B650;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+   padding: 10px;
+    margin-top: 2%;
+    margin-left: 45% ;
+    width: 15%;
+}
+

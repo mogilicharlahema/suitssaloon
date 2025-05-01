@@ -1,0 +1,333 @@
+.manicure-pedicure-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    color: #333;
+    background-color: #fff;
+    margin-top: -4px;
+}
+
+.mani-main-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+}
+
+.mani-section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.menu-title {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.mani-image-gallery {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mani-large-image-wrapper {
+
+    width: 60%;
+    max-width: 500px;
+}
+
+.mani-large-image {
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+
+}
+
+.mani-small-images-column {
+
+    width: 35%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
+}
+
+.mani-small-image {
+    width: 135%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-left: -128px;
+}
+
+
+.mani-what-we-include {
+    margin-bottom: 2rem;
+
+}
+
+
+.mani-what-we-include .mani-service-list {
+    list-style: none;
+    padding-left: 0;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+.mani-what-we-include .mani-service-list li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    position: relative;
+    font-size: 1.1rem;
+    color: #403D2A;
+
+    padding-left: 2em;
+
+}
+
+
+.mani-what-we-include .mani-service-list li::before {
+    content: '•';
+    color: #5d4037;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+
+    left: 0.5em;
+    top: 0;
+    width: 1em;
+    text-align: center;
+
+}
+
+
+.mani-menu-section {
+    margin-bottom: 2rem;
+}
+
+.mani-menu-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.mani-menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.5rem 0;
+    margin-bottom: 0.3rem;
+}
+
+.mani-menu-item:last-child {
+    border-bottom: none;
+}
+
+.mani-service-name {
+    font-size: 1rem;
+    color: #403D2A;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+}
+
+.dots {
+    color: #aaa;
+    white-space: nowrap;
+    overflow: hidden;
+    flex-grow: 1;
+    text-align: right;
+    padding: 0 5px;
+    font-weight: lighter;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.mani-service-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #403D2A;
+    white-space: nowrap;
+    margin-left: 0.5rem;
+    flex-shrink: 0;
+}
+
+.mani-button-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.mani-book-button {
+    background-color: #403D2A;
+    color: #E1B650;
+    border: none;
+    border-radius: 25px;
+
+    padding: 12px 30px;
+    font-size: 1rem;
+
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mani-book-button:hover {
+    background-color: #5d5a4a;
+}
+
+@media (max-width: 768px) {
+    .manicure-pedicure-container {
+        padding: 1rem 1.5rem;
+    }
+
+    .mani-main-title {
+        font-size: 2rem;
+    }
+
+    .mani-section-title {
+        font-size: 1.6rem;
+    }
+
+    .mani-image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mani-large-image-wrapper,
+    .mani-small-images-column {
+        width: 90%;
+        max-width: none;
+        margin-left: 0;
+    }
+
+    .mani-small-images-column {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 90%;
+    }
+
+    .mani-small-image {
+        width: calc(50% - 0.5rem);
+        height: auto;
+    }
+
+    .mani-what-we-include .mani-service-list {
+        max-width: 90%;
+    }
+
+    .mani-what-we-include .mani-service-list li {
+        font-size: 1rem;
+        padding-left: 1.8em;
+    }
+
+    .mani-what-we-include .mani-service-list li::before {
+        left: 0.4em;
+    }
+
+    .mani-menu-list {
+        max-width: 90%;
+    }
+
+    .mani-book-button {
+        width: 50%;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .manicure-pedicure-container {
+        padding: 1rem;
+    }
+
+    .mani-main-title {
+        font-size: 1.8rem;
+    }
+
+    .mani-section-title {
+        font-size: 1.4rem;
+    }
+
+    .mani-large-image-wrapper,
+    .mani-small-images-column {
+        width: 100%;
+    }
+
+    .mani-small-images-column {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .mani-small-image {
+        width: 100%;
+
+    }
+
+
+
+    .mani-what-we-include .mani-service-list {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .mani-what-we-include .mani-service-list li {
+        font-size: 0.95rem;
+        padding-left: 1.5em;
+    }
+
+    .mani-what-we-include .mani-service-list li::before {
+        left: 0.3em;
+    }
+
+
+    .mani-menu-item {
+        align-items: flex-start;
+        padding: 0.6rem 0;
+        flex-wrap: wrap;
+    }
+
+    .mani-service-name {
+        font-size: 0.9rem;
+        margin-right: 0.5rem;
+
+    }
+
+    .mani-service-price {
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+
+        text-align: right;
+    }
+
+    .dots {
+
+        font-size: 0.7em;
+        letter-spacing: 1px;
+
+    }
+
+    .mani-book-button {
+        width: 70%;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}

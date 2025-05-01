@@ -1,0 +1,70 @@
+.terms-container {
+    padding: 20px 40px;
+    font-family: 'Your Chosen Font', sans-serif;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.terms-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.terms-header h2 {
+    font-size: 2.2em;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    color: #111;
+}
+
+.terms-header h3 {
+    font-size: 1.6em;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+}
+
+.terms-header p {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+}
+
+.terms-section {
+    margin-bottom: 30px;
+}
+
+.terms-section .section-heading {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.terms-section p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.terms-section ul.terms-list {
+    list-style: disc;
+    margin-left: 25px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    padding-left: 20px;
+}
+
+.terms-section ul.terms-list li {
+    margin-bottom: 8px;
+}
+
+.terms-section a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.terms-section a:hover {
+    color: #004080;
+}
