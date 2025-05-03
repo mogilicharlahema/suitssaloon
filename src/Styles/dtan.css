@@ -1,198 +1,289 @@
 .dtan-container {
-    width: 100%;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem 1rem;
-    color: #403D2A;
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  color: #403d2a;
+  box-sizing: border-box;
+}
+
+.dtan-title {
+  font-size: 1.8rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #403d2a;
+}
+
+.dtan-section-title {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #403d2a;
+  text-align: center;
+}
+
+.dtan-text-lg {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.dtan-font-semibold {
+  font-weight: 600;
+}
+
+.dtan-text-center { text-align: center; }
+
+.dtan-mb-6 { margin-bottom: 1.5rem; }
+.dtan-mb-8 { margin-bottom: 2rem; }
+.dtan-mb-12 { margin-bottom: 3rem; }
+.dtan-mt-8 { margin-top: 2rem; }
+
+.dtan-image-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dtan-image-wrapper,
+.dtan-image-left-wrapper,
+.dtan-image-right-wrapper {
+  width: 100%;
+}
+
+.dtan-image-right-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dtan-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.dtan-include-section {
+  margin-bottom: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.dtan-include-list {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 1.5rem;
+  color: #403d2a;
+  padding-left: 165px;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dtan-include-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.dtan-include-list li:last-child {
+  margin-bottom: 0;
+}
+
+.dtan-menu-section {
+  margin-bottom: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.dtan-menu-content {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dtan-menu-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  column-gap: 0.75rem;
+  align-items: center;
+}
+
+.dtan-menu-header-row {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #cccccc;
+  color: #403d2a;
+}
+
+.dtan-menu-grid > div {
+  padding: 0.25rem 0.25rem;
+  word-wrap: break-word;
+}
+
+.dtan-menu-grid > div:first-child {
+  text-align: left;
+}
+
+.dtan-menu-grid > div:nth-child(2),
+.dtan-menu-grid > div:nth-child(3) {
+  text-align: right;
+}
+
+.dtan-menu-items-container > .dtan-menu-grid + .dtan-menu-grid {
+  margin-top: 0.5rem;
+}
+
+.dtan-menu-item-row {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  color: #403d2a;
+  font-size: 0.95rem;
+}
+
+.dtan-button-container {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.dtan-book-button {
+  display: inline-block;
+  background-color: #403d2a;
+  color: #e1b650;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.dtan-book-button:hover {
+  background-color: #5a5740;
+  transform: scale(1.03);
+}
+
+@media (min-width: 768px) {
+  .dtan-container {
+    padding: 2rem;
   }
-  
+
   .dtan-title {
-    font-size: 30px;
-    line-height: 2.25rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 1rem;
-    color: #403D2A;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
   }
-  
+
   .dtan-section-title {
     font-size: 1.8rem;
     line-height: 2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #403D2A;
-    text-align: center;
-    /* margin-left: 175px; */
+    margin-bottom: 1.5rem;
   }
-  
+
   .dtan-text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-  
-  .dtan-font-semibold {
-    font-weight: 600;
-  }
-  
-  .dtan-text-center { text-align: center; }
-  .dtan-text-left   { text-align: left;margin-left: 90px; }
-  .dtan-text-right  { text-align: right;margin-right: 90px; }
-  
-  .dtan-mb-6 { margin-bottom: 1.5rem; }
-  .dtan-mb-8 { margin-bottom: 2rem; }
-  .dtan-mb-12 { margin-bottom: 3rem; }
-  .dtan-mt-8 { margin-top: 2rem; }
-  
+
   .dtan-image-section {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 1.5rem;
     margin-bottom: 3rem;
+    align-items: stretch;
   }
-  
+
   .dtan-image-left-wrapper,
   .dtan-image-right-wrapper {
-    width: 100%;
+    flex: 1 1 50%;
+    width: auto;
   }
-  
+
+  .dtan-image-left-wrapper {
+    display: flex;
+  }
+
   .dtan-image-right-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
+    justify-content: space-between;
   }
-  
+
   .dtan-image {
-    display: block;
-    width: 100%;
+    max-height: none;
+    width: 70%;
     object-fit: cover;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   }
-  
-  .dtan-image-left {
-    height: 100%;
-    width: 60%;
-    margin-left: 245px;
+
+  .dtan-image-left-wrapper .dtan-image {
+    height: 101%;
+    width: 75%;
+    margin-left: 160px;
   }
-  
-  .dtan-image-right {
-    height: 50%;
-    width: 60%;
+
+  .dtan-image-right-wrapper .dtan-image {
+    height: 245px;
   }
-  
+
   .dtan-include-section {
     margin-bottom: 3rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
-  
-  .dtan-include-list {
-    list-style-type: disc;
-    list-style-position: inside;
-    margin-left: 1rem;
-    color:#403D2A;
-  }
-  
+
   .dtan-include-list li {
-    margin-bottom: 0.5rem;
-    margin-left: 200px;
-    font-size: 20px;
+    font-size: 1.1rem;
   }
-  
-  .dtan-include-list li:last-child {
-    margin-bottom: 0;
-  }
-  
+
   .dtan-menu-section {
     margin-bottom: 3rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
-  
-  .dtan-menu-content {
-    max-width: 48rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .dtan-menu-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: 1rem;
-  }
-  
-  .dtan-menu-header-row {
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    
-    color:#403D2A
-  }
-  
-  .dtan-menu-items-container > .dtan-menu-grid + .dtan-menu-grid {
-    margin-top: 0.5rem;
-  }
-  
-  .dtan-menu-item-row {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    color:#403D2A
-  }
-  
-  .dtan-button-container {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    margin-left: 190px;
-  }
-  
-  .dtan-book-button {
-    display: inline-block;
-    background-color: #403D2A;
-    color: #E1B650;
-    font-weight: 500;
-    padding: 0.5rem 1.5rem;
-    border-radius: 9999px;
-    border: none;
-    cursor: pointer;
-    margin-right: 130px;
-    
-  }
-  
 
+  .dtan-menu-grid {
+    column-gap: 1.5rem;
+    grid-template-columns: 3fr 1fr 1fr;
+  }
+
+  .dtan-menu-grid > div {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .dtan-menu-item-row {
+    font-size: 1rem;
+  }
+
+  .dtan-book-button {
+    font-size: 1.1rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media screen and (max-width:480px){
+  .dtan-include-list {
   
-  @media (min-width: 768px) {
-    .dtan-container {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  
-    .dtan-title {
-      font-size: 2.25rem;
-      line-height: 2.5rem;
-    }
-  
-    .dtan-image-section {
-      flex-direction: row;
-    }
-  
-    .dtan-image-left-wrapper,
-    .dtan-image-right-wrapper {
-      width: 50%;
-    }
-  
-    .dtan-include-section {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  
-    .dtan-menu-section {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  
-    .dtan-menu-grid {
-      column-gap: 2rem;
-    }
+    padding-left: 30px;
+ 
   }
   
+}
+@media (min-width: 1024px) {
+  .dtan-container {
+    padding: 1rem 3rem;
+  }
+
+  .dtan-image-section {
+    gap: 2rem;
+  }
+
+  .dtan-menu-grid {
+    column-gap: 2rem;
+  }
+}

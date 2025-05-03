@@ -1,10 +1,7 @@
-
-
 .bridal-package-container {
     max-width: 900px;
-    margin: -8px auto;
-    padding: 20px;
-    /* background-color: #fff; */
+    margin: 0 auto;
+    padding: 40px 20px;
     box-sizing: border-box;
 }
 
@@ -12,15 +9,16 @@
     text-align: center;
     font-size: 2.5rem;
     color: #3a3a3a;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-weight: 600;
-    margin-top: -45px;
+    margin-top: 0;
 }
 
 .image-section {
     display: flex;
     gap: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    margin-left: -80px;
 }
 
 .left-image {
@@ -32,60 +30,58 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     min-width: 0;
 }
 
 .image-section img {
-    width: 76%;
-    height: 477px;
     display: block;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 8px;
-    margin-left: 10px;
 }
 
 .right-images img {
-    height: 234px;
-    width: 120%;
-    margin-left: -120px;
-    border-radius: 20px;
+    border-radius: 8px;
+    width: 130%;
+    height: 318px;
 }
 
 .bridal-include-section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .bridal-include-section h2 {
     font-size: 1.8rem;
     color: #3a3a3a;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
     font-weight: 600;
 }
 
 .bridal-include-section ul {
-    padding-left: 25px;
-    margin: 0;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 0;
+    list-style-position: inside;
+    margin: 0 auto;
+    max-width: 650px;
 }
 
 .bridal-include-section li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: #555;
-    font-size: 18px;
+    font-size: 1.05rem;
+    line-height: 1.5;
 }
 
 .menu-section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .menu-section h2 {
     font-size: 1.8rem;
     color: #3a3a3a;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     text-align: center;
     font-weight: 600;
 }
@@ -100,153 +96,204 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 12px;
-    padding-bottom: 5px;
-    /* border-bottom: 1px solid #eee; */
+    margin-bottom: 15px;
+    padding-bottom: 8px;
     line-height: 1.4;
+    gap: 10px;
 }
 
 .service-name {
-    flex-basis: 60%;
+    flex: 1 1 auto;
     text-align: left;
     color: #444;
     padding-right: 10px;
 }
 
 .dashes {
+    flex-grow: 1;
     color: #aaa;
     white-space: nowrap;
-    padding: 0 10px;
+    overflow: hidden;
+    text-align: right;
+    padding: 0 5px;
     font-weight: lighter;
+    min-width: 20px;
 }
 
 .service-price {
+    flex-shrink: 0;
     font-weight: 600;
     color: #3a3a3a;
     white-space: nowrap;
     text-align: right;
-    flex-shrink: 0;
 }
 
 .appointment-button {
     display: block;
     margin: 30px auto 0;
-    padding: 12px 30px;
+    padding: 14px 35px;
     background-color: #403D2A;
     color: #E1B650;
     border: none;
-    border-radius: 25px;
-    font-size: 1rem;
+    border-radius: 30px;
+    font-size: 1.05rem;
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
 }
 
 .appointment-button:hover {
-    background-color: #404040;
+    background-color: #5a5742;
     transform: scale(1.03);
 }
 
 @media (max-width: 768px) {
+    .bridal-package-container {
+        padding: 30px 15px;
+    }
+
     .main-title {
-      font-size: 2rem;
+        font-size: 2.1rem;
+        margin-bottom: 35px;
     }
 
     .image-section {
-      flex-direction: column;
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 49px;
     }
 
     .left-image, .right-images {
-      flex: none;
-      width: 100%;
+        flex: none;
+        width: 100%;
+    }
+
+    .right-images {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 318px;
+        margin-top: -449px;
+    }
+
+    .image-section img {
+        width: 45%;
+        height: 431px;
+       
+        object-fit: cover;
     }
 
     .right-images img {
-      height: auto;
-      max-height: 300px;
+        height: 209px;
     }
 
-    .include-section h2, .menu-section h2 {
-      font-size: 1.6rem;
+    .bridal-include-section h2, .menu-section h2 {
+        font-size: 1.6rem;
     }
 
-    .include-section ul {
-       max-width: 90%;
-       padding-left: 20px;
+    .bridal-include-section ul {
+        max-width: 100%;
+        padding-left: 140px;
+        list-style-position: outside;
+    }
+
+    .bridal-include-section li {
+        font-size: 1rem;
     }
 
     .menu-items {
-       max-width: 100%;
-    }
-
-    .service-name {
-        flex-basis: auto;
-        margin-right: auto;
+        max-width: 100%;
+        padding: 0;
     }
 }
 
 @media (max-width: 480px) {
-     .bridal-package-container {
-        padding: 15px;
-        margin: 20px auto;
-     }
+    .bridal-package-container {
+        padding: 25px 10px;
+    }
 
-     .main-title {
-       font-size: 1.8rem;
-       margin-bottom: 20px;
-     }
+    .main-title {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
 
-     .image-section, .include-section, .menu-section {
-       margin-bottom: 30px;
-     }
+    .image-section, .bridal-include-section, .menu-section {
+        margin-bottom: 35px;
+    }
 
-     .include-section h2, .menu-section h2 {
-       font-size: 1.4rem;
-     }
+    .image-section img {
+        max-height: 238px;
+        width: 105%;
+        margin-left: -29px;
+    
+    }
 
-     .include-section li {
+    .right-images img {
+        max-height: 220px;
+    }
+.right-images{
+    margin-top: -3px;
+    margin-left: -5px;
+
+}
+    .bridal-include-section h2, .menu-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .bridal-include-section li {
         font-size: 0.95rem;
-     }
+        margin-bottom: 10px;
+    }
 
-     .menu-item {
-       flex-direction: row;
-       flex-wrap: wrap;
-       justify-content: space-between;
-       padding-bottom: 10px;
-       margin-bottom: 15px;
-     }
+    .menu-item {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        margin-bottom: 18px;
+        gap: 5px;
+        border-bottom: none;
+    }
 
-      .service-name {
-          flex-basis: 100%;
-          margin-bottom: 5px;
-          text-align: left;
-          padding-right: 0;
-          margin-right: 0;
-      }
+    .service-name {
+        flex-basis: 100%;
+        margin-bottom: 5px;
+        text-align: left;
+        padding-right: 0;
+        font-size: 1rem;
+    }
 
-      .dashes {
-          order: 2;
-          flex-grow: 1;
-          text-align: left;
-          padding: 0 5px 0 0;
-          color: transparent;
-          border-bottom: 1px dashed #ccc;
-          margin: 0 10px 0 0;
-          position: relative;
-          top: -4px;
-      }
+    .dashes {
+        order: 2;
+        flex-basis: auto;
+        flex-grow: 1;
+        text-align: left;
+        padding: 0;
+        color: transparent;
+       
+        margin-right: 10px;
+        position: relative;
+        top: -5px;
+        height: 1px;
+        min-width: 0;
+        overflow: visible;
+    }
 
-      .service-price {
-          order: 3;
-          text-align: right;
-          padding-left: 10px;
-          margin-left: auto;
-      }
+    .service-price {
+        order: 3;
+        text-align: right;
+        padding-left: 0px;
+        margin-left: 0;
+        font-size: 1rem;
+    }
 
-     .appointment-button {
-       padding: 10px 25px;
-       font-size: 0.95rem;
-       width: 80%;
-       max-width: 300px;
-     }
+    .appointment-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+        width: 90%;
+    }
+    .bridal-include-section ul {
+        max-width: 100%;
+        padding-left: 30px;
+        list-style-position: outside;
+    }
 }

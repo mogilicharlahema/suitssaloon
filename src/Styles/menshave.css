@@ -1,11 +1,13 @@
+
 .men-shave-container {
     font-family: sans-serif;
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     color: #333;
- 
     border-radius: 8px;
+    overflow: hidden; 
+    margin-top: -17px;
 }
 
 .shave-title {
@@ -30,7 +32,8 @@
     gap: 15px;
     margin-bottom: 40px;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden; 
+    margin-left: -72px;
 }
 
 .gallery-left {
@@ -38,31 +41,39 @@
 }
 
 .gallery-right {
-    flex: 1;
-    display: flex;
+    flex: 1 1;
+    display: flex
+;
     flex-direction: column;
     gap: 15px;
+    margin-left: -107px;
+
 }
 
 .image-gallery img {
-    width: 75%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     border-radius: 8px;
-    margin-left: 60px;
+}
+
+
+.gallery-left img {
+    width: 75%;
+    margin-left: 50px;
 }
 
 .gallery-right img {
-   width: 100%;
-   margin-left: -70px;
+   width: 100%; 
+   height: calc(50% - 7.5px); 
 }
 
 .service-details ul {
     list-style: none;
     padding-left: 0;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 600px; 
 }
 
 .service-details li {
@@ -75,7 +86,7 @@
 
 .service-details li::before {
     content: "•";
-    color: #8B4513;
+    color: #8B4513; 
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -88,16 +99,15 @@
 }
 
 .menu-items {
-    max-width: 500px;
+    max-width: 500px; 
     margin: 0 auto;
 }
 
 .menu-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
     padding: 10px 0;
-
     font-size: 1em;
 }
 
@@ -107,36 +117,81 @@
 
 .item-name {
     color: #555;
+    margin-right: 10px; 
+    flex-shrink: 0;
 }
 
-.item-dots {
-    flex-grow: 1;
-
-    margin: 0 10px;
+.shave-item-dots {
+    flex-grow: 1; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    color:black; 
+    margin: 0 5px; 
     position: relative;
-    top: -4px;
+    top: -3px; 
+    line-height: 1;
+    letter-spacing: 2px; 
+    text-align: center; 
 }
 
 .item-price {
     font-weight: bold;
     color: #666;
-    white-space: nowrap;
+    white-space: nowrap; 
+    margin-left: 10px;
+    flex-shrink: 0; 
 }
 
 .appointment-button {
     display: block;
     margin: 30px auto 0;
     padding: 12px 25px;
-    background-color: #403D2A;
-  color: #E1B650;
+    background-color: #403D2A; 
+    color: #E1B650; 
     border: none;
     border-radius: 25px;
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
-   
+  
 }
 
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .men-shave-container {
+        max-width: 720px;
+        padding: 20px 15px;
+    }
+
+    .shave-title {
+        font-size: 2.2em;
+    }
+
+    .section-title {
+        font-size: 1.6em;
+    }
+
+    .image-gallery {
+        gap: 10px;
+    }
+
+    .gallery-right {
+       gap: 10px;
+    }
+
+    .gallery-right img {
+       height: calc(50% - 5px);
+    }
+
+    .service-details ul {
+        max-width: 90%;
+    }
+
+    .menu-items {
+        max-width: 90%;
+    }
+}
 
 
 @media (max-width: 768px) {
@@ -156,36 +211,69 @@
 
     .image-gallery {
         flex-direction: column;
+        gap: 10px;
     }
 
-    .gallery-right {
-        flex-direction: row;
-    }
-
-    .gallery-right img {
-        height: 150px;
-        width: calc(50% - 7.5px);
+    .gallery-left, .gallery-right {
+        flex: none;
+        width: 100%;
     }
 
     .gallery-left img {
-        max-height: 300px;
+        margin-left: 0;
+        width: 50%;
+        height: auto;
+        max-height: 450px;
+    }
+
+    .gallery-right {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 102%;
+        margin-top: -62%;
+    }
+
+    .gallery-right img {
+        width: calc(50% - 5px);
+        height: 180px;
+        margin-left: 0;
+        object-fit: cover;
     }
 
     .service-details ul {
-        max-width: 90%;
+        max-width: 100%;
+        padding-left: 10px;
     }
-
+     .service-details li {
+        font-size: 0.95em;
+        padding-left: 20px;
+     }
+      .service-details li::before {
+        font-size: 1.1em;
+      }
+     
     .menu-items {
-        max-width: 90%;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .menu-item {
+        font-size: 0.95em;
+    }
+    .shave-item-dots {
+        margin: 0 3px; 
+        letter-spacing: 1px; 
+       
     }
 
     .appointment-button {
         padding: 10px 20px;
         font-size: 0.95em;
+        width: auto;
+        max-width: 300px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width:480px) {
     .men-shave-container {
         padding: 10px;
         margin: 10px;
@@ -207,43 +295,75 @@
     .image-gallery {
         gap: 10px;
         margin-bottom: 30px;
+        border-radius: 5px;
+    }
+
+    .gallery-left img {
+        border-radius: 5px;
+        width: 372px;
+        height: 213px;
     }
 
     .gallery-right {
         flex-direction: column;
+        gap: 10px;
+        margin-top: -3px;
+        margin-left: 20px;
     }
 
     .gallery-right img {
         width: 100%;
-        height: auto;
+        height: 180px;
+        border-radius: 5px;
     }
 
-    .gallery-left img {
-        max-height: 250px;
+    .service-details ul {
+        padding-left: 5px;
     }
 
     .service-details li {
         font-size: 0.9em;
-        padding-left: 20px;
+        padding-left: 18px;
         margin-bottom: 12px;
+        line-height: 1.5;
     }
 
     .service-details li::before {
         font-size: 1em;
     }
 
+     .menu-items {
+        padding: 0 5px;
+    }
+
     .menu-item {
         font-size: 0.9em;
         padding: 8px 0;
+        flex-wrap: wrap; 
     }
 
-    .item-dots {
-        margin: 0 5px;
+    .item-name {
+        margin-right: 5px;
+    }
+    .item-price {
+        margin-left: 5px;
+    }
+
+    .shave-item-dots {
+      margin: 0 2px; 
+      letter-spacing: 0.5px; 
+      top: -2px;
+      margin-left: -20px;
+      
     }
 
     .appointment-button {
         width: 90%;
+        max-width: none;
         padding: 12px 15px;
         font-size: 0.9em;
+        margin: 25px auto 0;
     }
 }
+    
+

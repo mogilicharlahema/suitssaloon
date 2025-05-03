@@ -4,7 +4,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     padding: 2rem 1rem;
-    /* gap: 1rem; */
+   
     background-color: #fff;
     max-width: 1200px;
     margin: 2rem auto;
@@ -39,7 +39,7 @@
     height: 130px;
     object-fit: contain;
     display: block;
-  
+
 }
 
 .award-text {
@@ -54,17 +54,17 @@
 
 
 .logo-scroller {
-    max-width: 1500px; 
-    width: 100%;   
-    /* height: 400px;   */
-    margin: 3rem auto; 
-    background-color: #ffffff; 
-    padding: 3rem 0; 
-    border-radius: 8px; 
-    /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);  */
-    overflow: hidden;  
-    position: relative; 
-   
+    max-width: 1500px;
+    width: 100%;
+  
+    margin: 3rem auto;
+    background-color: #ffffff;
+    padding: 0rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin-top: -60px;
+
 }
 
 .scroller-inner {
@@ -91,6 +91,7 @@
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -100,11 +101,13 @@
     .scroller-inner {
         animation: none;
     }
+
     .logo-scroller {
         overflow-x: auto;
         -webkit-mask: none;
         mask: none;
     }
+
     .scroller-inner {
         justify-content: center;
         padding: 0 1rem;
@@ -116,8 +119,13 @@
         height: 45px;
         margin: 0 20px;
     }
+
     .scroller-inner {
         animation-duration: 30s;
+    }
+
+    .logo-scroller {
+        margin-top: 20px;
     }
 }
 
@@ -126,10 +134,11 @@
         height: 35px;
         margin: 0 15px;
     }
+
     .scroller-inner {
         animation-duration: 25s;
     }
-   
+
 }
 
 @media (max-width: 992px) {
@@ -137,6 +146,7 @@
         justify-content: space-around;
         gap: 2rem 1rem;
     }
+
     .award-item {
         flex-basis: 40%;
         min-width: 160px;
@@ -148,19 +158,23 @@
         padding: 1.5rem 0.5rem;
         gap: 1.5rem;
     }
+
     .award-item {
         flex-basis: 45%;
         min-width: 140px;
     }
+
     .award-icon-wrapper {
         width: 80px;
         height: 80px;
         padding: 1rem;
     }
+
     .award-icon {
         width: 40px;
         height: 40px;
     }
+
     .award-text {
         font-size: 0.9rem;
     }
@@ -170,6 +184,7 @@
     .award-item {
         flex-basis: 80%;
     }
+
     .awards-section-container {
         justify-content: center;
     }

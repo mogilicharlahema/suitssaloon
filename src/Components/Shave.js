@@ -47,27 +47,27 @@ const MenShave = () => {
           <div className="menu-item">
             <span className="item-name">Ero Trim</span>
            
-           <span className="item-dots">- - - - - -</span>
+           <span className="shave-item-dots">- - - - - -</span>
             <span className="item-price">₹149/-</span>
           </div>
           <div className="menu-item">
             <span className="item-name">Regular Shave</span>
-            <span className="item-dots">- - - - - -</span>
+            <span className="shave-item-dots">- - - - - -</span>
             <span className="item-price">₹199/-</span>
           </div>
           <div className="menu-item">
             <span className="item-name">Bread Shade-Up</span>
-            <span className="item-dots">- - - - - -</span>
+            <span className="shave-item-dots">- - - - - -</span>
             <span className="item-price">₹249/-</span>
           </div>
           <div className="menu-item">
             <span className="item-name">Bread Design</span>
-             <span className="item-dots">- - - - - -</span>
+             <span className="shave-item-dots">- - - - - -</span>
             <span className="item-price">₹349/-</span>
           </div>
           <div className="menu-item">
             <span className="item-name">Head Shave</span>
-            <span className="item-dots">- - - - - -</span>
+            <span className="shave-item-dots">- - - - - -</span>
             <span className="item-price">₹399/-</span>
           </div>
         </div>

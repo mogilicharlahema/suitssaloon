@@ -131,4 +131,8 @@
     font-size: 0.9rem;
     line-height: 1.6;
   }
+  .about-image{
+    width: 50%;
+    margin: auto;
+  }
 }

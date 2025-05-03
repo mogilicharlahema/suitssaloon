@@ -2,7 +2,7 @@ import React from "react";
 import spa1 from "../Assets/spa1.png"; 
 import spamen1 from "../Assets/spamen2 (1).png"; 
 import spamen2 from "../Assets/spamen2 (2).png"; 
-import "../Styles/spa.css"
+import "../Styles/menspa.css"
 import { useNavigate } from "react-router-dom";
 
 const MenSpa = () => {
@@ -33,11 +33,11 @@ const MenSpa = () => {
             <div className="spa-content-wrapper">
                 <h1 className="spa-main-title">Spa</h1>
 
-                <div className="spa-image-gallery">
-                    <div className="spa-main-image">
+                <div className="men-spa-image-gallery">
+                    <div className="men-spa-main-image">
                         <img src={spa1} alt="Spa treatment room with massage table" />
                     </div>
-                    <div className="spa-side-images">
+                    <div className="men-spa-side-images">
                         <img src={spamen1} alt="Woman receiving head massage at spa" />
                         <img src={spamen2} alt="Woman receiving facial treatment with cucumber slices" />
                     </div>

@@ -18,22 +18,23 @@
 .nail-img2 {
     height: 225px;
     position: relative;
-    left: 24%;
+    left: 49%;
     width: 24%;
-    top: -118px;
+    top: -456px;
 }
 
 .nail-img3 {
     height: 225px;
     position: relative;
-    top: 118px;
+    top: -225px;
     width: 24%;
+    left: 380px;
 }
 
 .nail-art-title {
     font-size: 30px;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: -200px;
     margin-bottom: 10px;
     color: #403D2A;
     text-align: center;
@@ -127,3 +128,119 @@
     width: 15%;
 }
 
+@media screen and (max-width:768px) {
+    .nail-img1{
+        width: 315px;
+        height: 446px;
+        margin-left: -49px;
+
+    }
+    .nail-img2{
+        width: 300px;
+       
+        margin-left: 63px;
+        height: 223px;
+        margin-top: 11px;
+    }
+    .nail-img3{
+        width: 306px;
+        margin-top: 24px;
+        margin-left: -277px;
+        height: 202px;
+    }
+    .nail-list {
+        text-align: left;
+        padding-left: 60px;
+        margin-bottom: 30px;
+        color: #403D2A;
+        font-size: 20px;
+    }
+    .nail-book-button{
+        margin-left: 34%;
+        width: 32%;
+    }
+    .nail-images{
+        margin-left: -50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nail-img1 {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        margin-left: -71px;
+    }
+  
+    .nail-img2,
+    .nail-img3 {
+        width: 94%;
+        height: auto;
+        margin: 10px auto;
+        display: block;
+        top: 0;
+        left: 0;
+        position: static;
+        margin-left: -1px;
+    }
+  
+    .nail-list {
+      padding-left: 20px;
+      font-size: 18px;
+    }
+  
+    .nail-book-button {
+      width: 60%;
+      margin-left: 20%;
+    }
+  
+    .nail-art-title, .menu-text {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+    .table-container{
+        margin-top: -10px;
+    }
+    .nail-table-wrapper{
+        width: 10px;
+    }
+    .nail-images{
+        margin-left: 20px;
+    }
+    .table-container thead th {
+        font-weight: bold;
+        font-size: 14px;
+        padding-bottom: 15px;
+        border: none;
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    .nail-img1,
+    .nail-img2,
+    .nail-img3 {
+      width: 90%;
+      height: auto;
+      margin: 10px auto;
+      display: block;
+      position: static;
+    }
+  
+    .nail-list {
+      padding-left: 30px;
+      font-size: 19px;
+    }
+  
+    .nail-book-button {
+      width: 50%;
+      margin-left: 25%;
+    }
+  
+    .menu-text {
+      font-size: 28px;
+    }
+  }
+  
+ 
+  

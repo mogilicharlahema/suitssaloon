@@ -1,26 +1,25 @@
-
-
 .nav-service-page-container {
-    padding: 20px;
+    padding: 20px 15px;
     max-width: 1200px;
-    margin: 0 220px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .nav-services-section {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .nav-section-heading {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 1.8em;
     color: #333;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     font-weight: 600;
 }
 
 .nav-services-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -33,29 +32,25 @@
 
 .nav-service-card {
     background: linear-gradient(to bottom, #FFF5B3, #A69E6D);
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-top-left-radius: 25px;
-    min-width: 300px;
-    max-width: 300px;
-  padding: 35px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 25px 20px;
     text-align: center;
-  
-   
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    box-sizing: border-box;
 }
 
-
 .nav-circle-image {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    margin: 0 auto 20px;
+    margin: 0 auto 15px;
     overflow: hidden;
-    border: 4px solid #f0f0f0;
+    border: 3px solid #f0f0f0;
     flex-shrink: 0;
 }
 
@@ -67,48 +62,122 @@
 }
 
 .nav-service-card h2 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
+    font-size: 1.3em;
+    margin-bottom: 10px;
     color: #333;
     font-weight: 600;
 }
 
 .nav-service-card p {
-    font-size: 0.95em;
+    font-size: 0.9em;
     color: #555;
     line-height: 1.5;
     flex-grow: 1;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 600px) {
+    .nav-service-page-container {
+        padding: 30px 20px;
+    }
+
     .nav-services-grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 25px;
     }
+
+    .nav-service-card {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .nav-section-heading {
-        font-size: 2.2em;
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .nav-circle-image {
+        width: 110px;
+        height: 110px;
+        margin-bottom: 18px;
+    }
+
+    .nav-service-card h2 {
+        font-size: 1.4em;
+    }
+
+    .nav-service-card p {
+        font-size: 0.95em;
     }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 768px) {
+    .nav-service-page-container {
+        padding: 40px;
+    }
+
+    .nav-services-section {
+        margin-bottom: 50px;
+    }
+
     .nav-services-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
-    .nav-section-heading {
-        font-size: 1.8em;
-    }
+
     .nav-service-card {
-        padding: 20px;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 30px 25px;
     }
+
+    .nav-section-heading {
+        font-size: 2.2em;
+        margin-bottom: 35px;
+    }
+
     .nav-circle-image {
-        width: 100px;
-        height: 100px;
+        width: 115px;
+        height: 115px;
     }
+
     .nav-service-card h2 {
-        font-size: 1.3em;
+        font-size: 1.45em;
+        margin-bottom: 12px;
     }
+}
+
+@media (min-width: 992px) {
+    .nav-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .nav-section-heading {
+        font-size: 2.5em;
+        margin-bottom: 40px;
+    }
+
+    .nav-circle-image {
+        width: 120px;
+        height: 120px;
+        border-width: 4px;
+        margin-bottom: 20px;
+    }
+
+    .nav-service-card {
+        padding: 35px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+
+    .nav-service-card h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
     .nav-service-card p {
-        font-size: 0.9em;
+        font-size: 0.95em;
     }
 }

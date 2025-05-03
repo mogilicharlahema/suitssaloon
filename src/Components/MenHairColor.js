@@ -1,27 +1,27 @@
 import React from "react";
-import menh1 from "../Assets/menh1.png"; 
-import men2 from "../Assets/men2.png"; 
-import men3 from "../Assets/men3.png"; 
+import menh1 from "../Assets/menh1.png";
+import men2 from "../Assets/men2.png";
+import men3 from "../Assets/men3.png";
 import "../Styles/MenHairStyling.css";
 import { useNavigate } from "react-router-dom";
 
-const MenHairColorPage=()=>{
-     const navigate=useNavigate()
-      const handleMenHairClrBtn=()=>{
-        navigate("/book-appointment")
-      }
-    return(
-        <>
-         <div className="men-hair-styling-container">
+
+const MenHairStyling = () => {
+  const navigate=useNavigate()
+  const handleMenHairBtn=()=>{
+    navigate("/book-appointment")
+  }
+  return (
+    <div className="men-hair-styling-container">
       <h1 className="main-title">Men Hair Coloring</h1>
 
-      <div className="image-gallery">
-        <div className="large-image-wrapper">
-          <img src={menh1} alt="Salon interior with washing stations" className="gallery-image large-image" />
+      <div className="men-image-gallery">
+        <div className="men-large-image-wrapper">
+          <img src={menh1} alt="Man getting a stylish haircut in a salon" className="men-gallery-image large-image" />
         </div>
-        <div className="small-images-wrapper">
-          <img src={men2} alt="Close up of barber cutting hair" className="gallery-image small-image" />
-          <img src={men3} alt="Barber cutting hair with clippers" className="gallery-image small-image" />
+        <div className="men-small-images-wrapper">
+          <img src={men2} alt="Close up of barber trimming hair details" className="men-gallery-image small-image" />
+          <img src={men3} alt="Barber using clippers on a client's hair" className="men-gallery-image small-image" />
         </div>
       </div>
 
@@ -37,63 +37,62 @@ const MenHairColorPage=()=>{
             lifestyle, and face shape.
           </li>
           <li>
-            A refreshing shampoo and conditioning treatment to cleanse and prep
-            your hair for styling.
-          </li>
-          <li>
             A professional blow-dry and finishing touch to leave you looking
             sharp and confident
           </li>
         </ul>
       </div>
 
-      <div className="menu-section">
+      
+      <div className="hair-menu-section">
         <h2 className="section-title">Menu</h2>
-        <div className="menu-items">
-          <div className="menu-item">
-            <div className="service-info">
-              <span className="service-name">Haircut & Styling</span>
-              
-              <span className="starts-from">(Starts From)</span>
+    
+        <div className="hair-menu-items">
+      
+          <div className="hair-menu-item">
+          
+            <div className="hair-service-info">
+              <span className="hair-service-name">Haircut & Styling</span>
+              <span className="hair-starts-from">(Starts From)</span>
+             
               <span className="dashesssss">- - - - - -</span>
             </div>
-            <div className="dots"></div>
-            <span className="service-price">₹299/-</span>
+           
+            <span className="hair-service-price">₹299/-</span>
           </div>
-          <div className="menu-item">
-            <div className="service-info">
-              <span className="service-name">Shaving</span>
-              <span className="starts-from">(Starts From)</span>
+
+          <div className="hair-menu-item">
+            <div className="hair-service-info">
+              <span className="hair-service-name">Shaving</span>
+              <span className="hair-starts-from">(Starts From)</span>
               <span className="dashesssss">- - - - - -</span>
             </div>
-            <div className="dots"></div>
-            <span className="service-price">₹149/-</span>
+            <span className="hair-service-price">₹149/-</span>
           </div>
-          <div className="menu-item">
-            <div className="service-info">
-              <span className="service-name">Blow Dry</span>
-              <span className="starts-from">(Starts From)</span>
-              <span className="dashesssss">- - - - - -</span>
+
+          <div className="hair-menu-item">
+            <div className="hair-service-info">
+              <span className="hair-service-name">Blow Dry</span>
+              <span className="hair-starts-from">(Starts From)</span>
+               <span className="dashesssss">- - - - - -</span>
             </div>
-            <div className="dots"></div>
-            <span className="service-price">₹299/-</span>
+            <span className="hair-service-price">₹299/-</span>
           </div>
-          <div className="menu-item">
-            <div className="service-info">
-              <span className="service-name">Hair coloring</span>
-              <span className="starts-from">(Starts From)</span>
-              <span className="dashesssss">- - - - - -</span>
+
+          <div className="hair-menu-item">
+            <div className="hair-service-info">
+              <span className="hair-service-name">Hair coloring</span>
+              <span className="hair-starts-from">(Starts From)</span>
+               <span className="dashesssss">- - - - - -</span>
             </div>
-            <div className="dots"></div>
-            <span className="service-price">₹299/-</span>
+            <span className="hair-service-price">₹299/-</span>
           </div>
         </div>
       </div>
 
-      <button className="cta-button" onClick={handleMenHairClrBtn}>Book an appointment</button>
+      <button className="cta-button" onClick={handleMenHairBtn}>Book an appointment</button>
     </div>
-        </>
-    )
-}
+  );
+};
 
-export default MenHairColorPage
+export default MenHairStyling;

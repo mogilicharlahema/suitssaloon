@@ -33,7 +33,7 @@ const FooterSection = () => {
                     </div>
                 </div>
 
-                <div className="footer-col">
+                <div className="footer-col1">
                     <ul>
                         <li><Link to="/contact">Contact Us</Link></li>
                         <li><Link to="/about">About Us</Link></li>
@@ -42,7 +42,7 @@ const FooterSection = () => {
                 </div>
 
         
-                <div className="footer-col">
+                <div className="footer-col2">
                     <ul>
                         <li><Link to="/navservices">Services</Link></li>
                         <li><Link to="/faq">FAQ'S</Link></li>
@@ -51,7 +51,7 @@ const FooterSection = () => {
                     </ul>
                 </div>
 
-                <div className="footer-col">
+                <div className="footer-col3">
                     <ul>
                         <li><Link to="/gallery">Gallery</Link></li>
                         <li><Link to="/location">Location</Link></li>

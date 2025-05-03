@@ -14,13 +14,13 @@ const EyelashExtension = () => {
         <div className="eyelash-extension-container">
             <h1>Eyelash Extension</h1>
 
-            <div className="image-gallery">
-                <div className="gallery-left">
-                    <img src={eye1} alt="Salon interior with chairs and mirrors" className="gallery-img"/>
+            <div className="eye-image-gallery">
+                <div className="eye-gallery-left">
+                    <img src={eye1} alt="Salon interior with chairs and mirrors" className="eye-left-gallery-img"/>
                 </div>
-                <div className="gallery-right">
-                    <img src={eye2} alt="Eyelash extension application process" className="gallery-img"/>
-                    <img src={eye3} alt="Close up of finished extended eyelashes" className="gallery-img"/>
+                <div className="eye-gallery-right">
+                    <img src={eye2} alt="Eyelash extension application process" className="eye-right-gallery-img"/>
+                    <img src={eye3} alt="Close up of finished extended eyelashes" className="eye-right-gallery-img"/>
                 </div>
             </div>
 

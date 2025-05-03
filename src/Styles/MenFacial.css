@@ -111,7 +111,7 @@
   
   .menu-item {
     display: flex;
-    /* justify-content: space-between; */
+   
     justify-content: flex-start;
     align-items: baseline;
     margin-bottom: 18px;
@@ -122,7 +122,7 @@
   .item-name {
     color:#403D2A;
     font-weight: 500;
-    /* flex-shrink: 1; */
+   
     flex-basis: 60%;
     flex-grow: 0;        
     flex-shrink: 0; 
@@ -143,18 +143,16 @@
    
     margin: 0 10px;
     white-space:nowrap;
-    /* position: relative;
-    top: -4px;
-    height: 1px; */
+   
   }
   
   .item-price {
-    margin-left: auto;      /* This pushes the price to the end of the line */
-    flex-shrink: 0;         /* Prevent price from shrinking */
+    margin-left: auto;      
+    flex-shrink: 0;         
     color:#403D2A;
     font-weight: 600;
     white-space: nowrap;
-    padding-left: 10px;     /* Space between dots and price */
+    padding-left: 10px;     
     text-align: right;
   }
   

@@ -1,195 +1,204 @@
-/* General Styles */
+
 .location-section {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    max-width: 1200px; /* Adjust max-width as needed */
-    margin: 2rem auto; /* Center the section with some top/bottom margin */
-    padding: 0 1rem; /* Add padding for smaller screens */
-    color: #333; /* Default text color */
+
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #333;
+}
+
+.location-main-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+}
+
+.location-image-container {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.location-main-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.location-email-link {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+
+
+.location-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.location-details,
+.location-timings {
+  flex: 1;
+  min-width: 280px;
+}
+
+.location-sub-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.location-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #555;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.location-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+}
+
+.location-text strong {
+  color: #333;
+  font-weight: 600;
+  margin-right: 0.3rem;
+}
+
+.location-text.address {
+  line-height: 1.7;
+}
+
+.location-timings .timing-hours {
+  font-weight: 500;
+}
+
+.location-map-container {
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+
+.location-map-iframe {
+  display: block; 
+  width: 100%; 
+  max-width: 100%; 
+  height: 450px; 
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+
+@media (max-width: 768px) {
+.location-main-title {
+  font-size: 1.8rem;
+}
+
+.location-sub-title {
+  font-size: 1.3rem;
+}
+
+.location-text {
+  font-size: 0.9rem;
+}
+
+.location-content-wrapper {
+   flex-direction: column; 
+   align-items: flex-start; 
+   gap: 1.5rem; 
+   padding: 0 1rem; 
+}
+
+ .location-details,
+ .location-timings {
+    flex-basis: 100%; 
+    min-width: unset; 
+    width: 100%; 
+ }
+
+ .location-details {
+   margin-bottom: 0; 
+ }
+
+  .location-content-wrapper > .location-timings {
+     margin-bottom: 0;
+  }
+  .loc-map {
+    border: 0px;
+    width: 685px;
+    height: 160px;
   }
   
-  /* Main Title */
-  .location-main-title {
-    text-align: center;
-    font-size: 2rem; /* Adjust size */
-    font-weight: 600;
-    color: #4a4a4a; /* Slightly darker grey */
-    margin-bottom: 1.5rem;
-  }
+}
+
+
+@media (max-width: 480px) {
+.location-section {
+  margin: 1.5rem auto; 
+  padding: 0 0.75rem; 
+}
+
+.location-main-title {
+  font-size: 1.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.location-image-container {
+  margin-bottom: 1.5rem;
+}
+ .location-main-image {
+  max-height: 300px; 
+ }
+
+.location-content-wrapper {
+  padding: 0 0.75rem; 
+  gap: 1rem; 
   
-  /* Main Image */
-  .location-image-container {
-    width: 100%;
-    margin-bottom: 2rem; /* Space below the image */
-  }
-  
-  .location-main-image {
-    display: block; /* Remove extra space below image */
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    max-height: 450px; /* Optional: Limit image height */
-    object-fit: cover; /* Cover the container, may crop */
-    border-radius: 8px; /* Optional: slightly rounded corners */
-  }
-  
-  /* Content Wrapper (for Location Details & Timings) */
-  .location-content-wrapper {
-    display: flex;
-    justify-content: space-between; /* Space out the two columns */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 2rem; /* Add space between columns when wrapped */
-    margin-bottom: 2rem; /* Space below the content */
-    padding: 0 1rem; /* Add some padding inside the wrapper */
-  }
-  
-  /* Location Details & Timings Columns */
-  .location-details,
-  .location-timings {
-    flex: 1; /* Allow columns to grow */
-    min-width: 280px; /* Minimum width before wrapping */
-  }
-  
-  /* Sub Titles (Location & Timings) */
-  .location-sub-title {
-    font-size: 1.4rem; /* Adjust size */
-    font-weight: 600;
-    color: #4a4a4a;
-    margin-bottom: 1rem;
-    display: flex; /* Align icon and text */
-    align-items: center; /* Vertically center icon and text */
-  }
-  
-  /* Icon (Styled Dot) */
-  .location-icon {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #555; /* Dark grey dot */
-    border-radius: 50%; /* Make it circular */
-    margin-right: 0.75rem; /* Space between icon and text */
-  }
-  
-  /* Paragraph Text Styles */
-  .location-text {
-    font-size: 0.95rem; /* Adjust size */
-    line-height: 1.6;
-    color: #555; /* Slightly lighter grey */
-    margin-bottom: 0.6rem;
-    cursor: pointer;
-  }
-  
-  .location-text strong {
-    color: #333; /* Darker color for labels */
-    font-weight: 600;
-    margin-right: 0.3rem;
-  }
-  
-  /* Specific styling for address if needed */
-  .location-text.address {
-    line-height: 1.7; /* Slightly more spacing for address */
-  }
-  
-  /* Specific styling for timing hours */
-  .location-timings .timing-hours {
-    font-weight: 500;
-  }
-  
-  /* Map Container */
-  .location-map-container {
-    width: 100%;
-    padding: 0 1rem; /* Match content padding */
-    box-sizing: border-box; /* Include padding in width calculation */
-  }
-  
-  .location-map-image {
-    display: block;
-    width: 100%;
-    height: auto;
-    border: 1px solid #eee; /* Optional: faint border around map */
-    border-radius: 4px; /* Optional: slight rounding */
-  }
-  
-  
-  /* --- Responsiveness --- */
-  
-  /* Tablet Screens (Example Breakpoint) */
-  @media (max-width: 768px) {
-    .location-main-title {
-      font-size: 1.8rem;
-    }
-  
-    .location-sub-title {
-      font-size: 1.3rem;
-    }
-  
-    .location-text {
-      font-size: 0.9rem;
-    }
-  
-    /* Stack columns if needed, though flex-wrap might handle it */
-    .location-content-wrapper {
-       /* If you prefer explicit stacking:
-       flex-direction: column;
-       align-items: flex-start; */
-       gap: 1.5rem; /* Reduce gap slightly */
-    }
-  
-     .location-details,
-     .location-timings {
-        flex-basis: 100%; /* Ensure they take full width when wrapped */
-        min-width: unset; /* Remove min-width constraint */
-     }
-     /* Add margin bottom to the first item when stacked */
-     .location-details {
-       margin-bottom: 1.5rem; /* Add space below location details when stacked */
-     }
-      /* Ensure timings doesn't have extra margin when wrapped */
-      .location-content-wrapper > .location-timings {
-         margin-bottom: 0;
-      }
-  }
-  
-  /* Mobile Screens (Example Breakpoint) */
-  @media (max-width: 480px) {
-    .location-section {
-      margin: 1rem auto;
-      padding: 0 0.5rem; /* Reduce side padding */
-    }
-  
-    .location-main-title {
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-    }
-  
-    .location-image-container {
-      margin-bottom: 1.5rem;
-    }
-  
-    .location-content-wrapper {
-      padding: 0 0.5rem; /* Reduce padding */
-      gap: 1rem; /* Reduce gap */
-       /* Explicit stacking is often better for mobile */
-       flex-direction: column;
-       align-items: stretch; /* Make items stretch full width */
-    }
-  
-     .location-details {
-       margin-bottom: 1rem;
-     }
-  
-    .location-sub-title {
-      font-size: 1.2rem;
-      margin-bottom: 0.8rem;
-    }
-  
-    .location-text {
-      font-size: 0.85rem;
-      line-height: 1.5;
-      margin-bottom: 0.5rem;
-      cursor: pointer;
-    }
-  
-    .location-map-container {
-        padding: 0 0.5rem; /* Reduce padding */
-    }
-  }
+   flex-direction: column;
+   align-items: stretch; 
+}
+
+ .location-details {
+   margin-bottom: 0;
+ }
+
+.location-sub-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.location-text {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.location-map-container {
+    padding: 0 0.75rem; 
+    margin-top: 1.5rem; 
+}
+
+.loc-map {
+  border: 0px;
+  width: 279px;
+  height: 160px;
+}
+}

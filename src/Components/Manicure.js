@@ -49,13 +49,13 @@ const ManicureAndPedicure = () => {
 
       <div className="mani-what-we-include">
         <h2 className="mani-section-title">What We Include In The Service</h2>
-        {/* Keep the ul centered if desired, or adjust parent container */}
-        <ul className="mani-service-list"> {/* Optional: Added class for clarity */}
+        
+        <ul className="mani-service-list">
           <li>
             A personalized consultation to understand your skin condition and
             preferences to choose the best option for you.
           </li>
-          {/* Removed the extra li item */}
+         
           <li>
             Proper guidance on how to care for your nails and skin after the
             treatment to maintain the results.

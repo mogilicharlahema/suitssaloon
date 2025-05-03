@@ -25,8 +25,12 @@ const Location = () => {
             <strong>Phone:</strong> 040-45026989
           </p>
           <p className="location-text">
-            <strong>Email:</strong> operations@thesuitssalonspa.com
-          </p>
+  <strong>Email:</strong>{' '}
+  <a href="mailto:operations@thesuitssalonspa.com" className="location-email-link">
+    operations@thesuitssalonspa.com
+  </a>
+</p>
+
           <p className="location-text address">
             <strong>Location:</strong> 1st Floor And 2nd Floor, Plot No: 4 & 5,
             behind Image Hospital, Arunodaya Colony, Vittal Rao Nagar,
@@ -54,6 +58,7 @@ const Location = () => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade" 
         title="The Suits Salon & Spa Location Map" 
+        className='loc-map'
        >
        </iframe>
       </div>

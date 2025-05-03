@@ -37,8 +37,8 @@ const Spa = () => {
                         <img src={spa1} alt="Spa treatment room with massage table" />
                     </div>
                     <div className="spa-side-images">
-                        <img src={spa2} alt="Woman receiving head massage at spa" />
-                        <img src={spa3} alt="Woman receiving facial treatment with cucumber slices" />
+                        <img src={spa2} className="spa-side-images-right1" alt="Woman receiving head massage at spa" />
+                        <img src={spa3} className="spa-side-images-right1" alt="Woman receiving facial treatment with cucumber slices" />
                     </div>
                 </div>
 

@@ -137,3 +137,19 @@
     border-bottom: none;
   }
 }
+
+@media (max-width: 768px){
+  .logo{
+    width: 15%;
+    height: 53px;
+
+  }
+  
+}
+@media (max-width: 420px){
+  .logo{
+    width: 15%;
+    margin-left: 20px;
+    height: 10%;
+  }
+}

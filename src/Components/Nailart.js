@@ -1,12 +1,12 @@
 import React from "react";
-import "../Styles/Nailart.css";
-import nail1 from "../Assets/nail1.png";
+import "../Styles/Nailart.css"; 
+import nail1 from "../Assets/nail1.png"; 
 import nail2 from "../Assets/nail2.png";
 import nail3 from "../Assets/nail3.png";
 import { useNavigate } from "react-router-dom";
 
-
 const menuData = [
+   
     { name: "Gel polish(shellac)", price1: "₹99/-", price10: "₹899/-" },
     { name: "Builder Gel", price1: "₹149/-", price10: "₹1,499/-" },
     { name: "Poly Gel", price1: "₹149/-", price10: "₹1,499/-" },
@@ -28,33 +28,38 @@ const menuData = [
     { name: "Paper Extensions", price1: "₹349/-", price10: "₹3,999/-" },
 ];
 
-
 const NailArtSection = () => {
-    const navigate=useNavigate()
-    const handleNailBtn=()=>{
-        navigate("/book-appointment")
-    }
+    const navigate = useNavigate();
+    const handleNailBtn = () => {
+        navigate("/book-appointment");
+    };
+
     return (
         <div className="nail-art-container">
-        
             <h2 className="nail-name">Nail Art</h2>
 
+          
             <div className="nail-images">
-                <img src={nail1} alt="nail1" className="nail-img1" />
-                <img src={nail2} alt="nail2" className="nail-img2" />
-                <img src={nail3} alt="nail3" className="nail-img3" />
+                <img src={nail1} alt="Nail Art Style 1" className="nail-img1" />
+                
+                <div className="nail-images-col2">
+                    <img src={nail2} alt="Nail Art Style 2" className="nail-img2" />
+                    <img src={nail3} alt="Nail Art Style 3" className="nail-img3" />
+                </div>
             </div>
 
             <div className="nail-service-section">
                 <h1 className="nail-art-title">What We Include In The Service</h1>
                 <ul className="nail-list">
+                   
                     <li>
-                        Personalised consultation to determine your desired nail look and ensure a proper fit.<br></br>
+                        Personalised consultation to determine your desired nail look and ensure a proper fit.</li>
+                        <li>
                         This may include asking about your preferred nail shape, length, and style,
-                        as well as <br></br>your lifestyle and activities that may affect your nails.
-                    </li>
+                        as well as your<br></br> lifestyle and activities that may affect your nails.</li>
+                    
                     <li>
-                        To understand if you have any sensitivities or allergies and your desired level of maintenance and upkeep.
+                        To understand if you have any sensitivities or allergies and your desired level<br></br> of maintenance and upkeep.
                     </li>
                     <li>
                         Proper guidance on the maintenance of the nail extension.
@@ -62,32 +67,34 @@ const NailArtSection = () => {
                 </ul>
             </div>
 
-         
             <div className="nail-menu">
                 <h3 className="menu-text">Menu</h3>
-                <table className="table-container">
-                    <thead>
-                        <tr>
-                        
-                            <th className="header-item"></th>
-                            <th className="header-price">1 Finger</th>
-                            <th className="header-price">10 Fingers</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      
-                        {menuData.map((item, index) => (
-                            <tr key={index}>
-                                <td className="menu-item-name">{item.name}</td>
-                                <td className="menu-item-price">{item.price1}</td>
-                                <td className="menu-item-price">{item.price10}</td>
+               
+                <div className="nail-table-wrapper">
+                    <table className="table-container">
+                        <thead>
+                            <tr>
+                                <th className="header-item">Service</th> 
+                                <th className="header-price">1 Finger</th>
+                                <th className="header-price">10 Fingers</th>
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            {menuData.map((item, index) => (
+                                <tr key={index}>
+                                    <td className="menu-item-name">{item.name}</td>
+                                    <td className="menu-item-price">{item.price1}</td>
+                                    <td className="menu-item-price">{item.price10}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
-            <button className="nail-book-button" onClick={handleNailBtn }>Book an Appointment</button>
+            <button className="nail-book-button" onClick={handleNailBtn}>
+                Book an Appointment
+            </button>
         </div>
     );
 };
