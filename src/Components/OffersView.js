@@ -64,7 +64,7 @@ const OffersViewSection = () => {
                         </ul>
                     </div>
 
-                    <button className="cta-button" onClick={handleBookBtn}>
+                    <button className="offer-cta-button" onClick={handleBookBtn}>
                         Book an appointment 
                     </button>
                 </div>

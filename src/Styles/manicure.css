@@ -309,5 +309,6 @@
     }
     .mani-large-image{
         width: 283px;
+        margin-left: 3px;
     }
 }

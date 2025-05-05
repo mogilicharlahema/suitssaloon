@@ -23,10 +23,10 @@ const FooterSection = () => {
                             <a href="https://www.instagram.com/thesuitssalon?igsh=aGNiZDd4cmZ3Ynkz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                <img src={instagramIcon} alt="Instagram" />
                             </a>
-                            <a href="https://www.facebook.com/profile.php?id=61561106905978" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <a href="https://google.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                <img src={facebookIcon} alt="Facebook" />
                             </a>
-                            <a href="https://google.com" target="_blank" rel="noopener noreferrer" aria-label="Google">
+                            <a href="https://www.facebook.com/profile.php?id=61561106905978" target="_blank" rel="noopener noreferrer" aria-label="Google">
                                <img src={googleIcon} alt="Google" />
                             </a>
                         </div>

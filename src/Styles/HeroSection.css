@@ -61,14 +61,13 @@
 
 @media (max-width: 480px) {
   .hero-book-btn {
-    top: 82%;
+    top: 87%;
     left: 70%;
     font-size: 14px;
-   
-    width: 40%;
+    width: 56%;
   }
   .hero-pic{
-    margin-left: -20px;
+     margin-left: -13px;
     margin-top: -10px;
   }
 }
