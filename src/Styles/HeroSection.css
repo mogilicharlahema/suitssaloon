@@ -5,19 +5,28 @@
 }
 
 .hero-pic {
-  height: auto;
-  width: 104vw;
+  height: 736px;
+  width: 104%;
   object-fit: cover;
   display: block;
   margin-left: -40px;
-  margin-top: -40px;
+  margin-top: 1px;
 }
 
+.hero-content {
+  position: absolute;
+  top: 120px;
+  margin-top: 100px;
+  margin-left: 300px;
+  z-index: 1;
+  max-width: 60%;
+  height: auto;
+}
 
 .hero-book-btn {
   position: absolute;
-  top: 87%;
-  left: 70%;
+  top: 75%;
+  left: 52%;
   transform: translate(-50%, -50%);
   padding: 12px 24px;
   background-color: #403D2A;
@@ -25,17 +34,26 @@
   border-radius: 60px;
   font-size: 20px;
   font-weight: 500;
-  z-index: 1;
+  z-index: 2;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   border: none;
+  white-space: nowrap;
 }
 
 
 @media (max-width: 1024px) {
-  .book-btn {
+  .hero-pic {
+     margin-left: -30px;
+  }
+  .hero-content {
+    margin-left: 180px;
+    margin-top: 120px;
+    max-width: 65%;
+  }
+  .hero-book-btn {
     top: 78%;
-    left: 65%;
+    left: 58%;
     font-size: 18px;
     padding: 10px 20px;
     width: auto;
@@ -44,30 +62,101 @@
 
 
 @media (max-width: 768px) {
+  .hero-pic {
+    width: 110%;
+    margin-left: -15px;
+    margin-top: -10px;
+    height: 650px;
+  }
+  .hero-content {
+    margin-left: 10%;
+    margin-top: 80px;
+    width: 80%;
+    max-width: 400px;
+  }
   .hero-book-btn {
-    top: 84%;
-    left: 60%;
+    top: 82%;
+    left: 50%;
     font-size: 16px;
     padding: 10px 18px;
     width: auto;
-   
+    transform: translateX(-50%);
   }
-  .hero-pic{
-    margin-left: -15px;
-    margin-top: -20px;
+}
+
+
+@media (max-width: 600px) {
+   .hero-pic {
+    width: 115%;
+    margin-left: -10%;
+    margin-top: -5px;
+    height: 580px;
+  }
+  .hero-content {
+    margin-left: 8%;
+    margin-top: 60px;
+    width: 84%;
+    max-width: 350px;
+  }
+   .hero-book-btn {
+    top: 85%;
+    left: 50%;
+    width: 60%;
+    max-width: 250px;
+    font-size: 15px;
+    padding: 10px 16px;
+    
+    transform: translateX(-50%);
   }
 }
 
 
 @media (max-width: 480px) {
-  .hero-book-btn {
-    top: 87%;
-    left: 70%;
-    font-size: 14px;
-    width: 56%;
+  .hero-pic {
+    width: 120%;
+    margin-left: -15%;
+    margin-top: 0px;
+    height: 500px;
   }
-  .hero-pic{
-     margin-left: -13px;
-    margin-top: -10px;
+  .hero-content {
+    margin-left: 5%;
+    margin-top: 50px;
+    width: 90%;
+    max-width: 300px;
+  }
+  .hero-book-btn {
+    top: 88%;
+    left: 50%;
+    font-size: 14px;
+    width: 70%;
+    max-width: 280px;
+    padding: 9px 15px;
+    transform: translateX(-50%);
+  }
+}
+
+
+@media (max-width: 360px) {
+   .hero-pic {
+    width: 125%;
+    margin-left: -18%;
+    height: 310px;
+  }
+   .hero-content {
+    margin-left: 7%; 
+    margin-top: 96px;
+    width: 92%;
+    max-width: 280px; 
+  }
+  .hero-book-btn {
+    
+    top: 69%;
+    left: 50%;
+    width: 55%;
+    max-width: 248px;
+    font-size: 13px;
+    padding: 8px 14px;
+   
+    transform: translateX(-50%);
   }
 }

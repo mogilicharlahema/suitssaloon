@@ -8,7 +8,7 @@
 .main-title {
     text-align: center;
     font-size: 2.5rem;
-    color: #3a3a3a;
+    color: #403D2A;
     margin-bottom: 40px;
     font-weight: 600;
     margin-top: 0;
@@ -54,7 +54,7 @@
 
 .bridal-include-section h2 {
     font-size: 1.8rem;
-    color: #3a3a3a;
+    color: #403D2A;
     margin-bottom: 20px;
     text-align: center;
     font-weight: 600;
@@ -80,7 +80,7 @@
 
 .menu-section h2 {
     font-size: 1.8rem;
-    color: #3a3a3a;
+    color: #403D2A;
     margin-bottom: 25px;
     text-align: center;
     font-weight: 600;
@@ -105,7 +105,7 @@
 .service-name {
     flex: 1 1 auto;
     text-align: left;
-    color: #444;
+    color: #403D2A;
     padding-right: 10px;
 }
 
@@ -123,7 +123,7 @@
 .service-price {
     flex-shrink: 0;
     font-weight: 600;
-    color: #3a3a3a;
+    color: #403D2A;
     white-space: nowrap;
     text-align: right;
 }
@@ -144,7 +144,7 @@
 }
 
 .appointment-button:hover {
-    background-color: #5a5742;
+    background-color: #403D2A;
     transform: scale(1.03);
 }
 
