@@ -136,3 +136,16 @@
     margin: auto;
   }
 }
+
+@media (max-width: 480px){
+  .about-image {
+    display: block;
+    width: 65%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 65px;
+  }
+
+
+
+}

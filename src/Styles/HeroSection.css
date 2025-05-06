@@ -113,25 +113,25 @@
 
 @media (max-width: 480px) {
   .hero-pic {
-    width: 120%;
+    height: 340px;
     margin-left: -15%;
-    margin-top: 0px;
-    height: 500px;
+    margin-top: 0;
+    width: 120%;
   }
   .hero-content {
-    margin-left: 5%;
-    margin-top: 50px;
-    width: 90%;
+    margin-left: 16%;
+    margin-top: -7px;
     max-width: 300px;
+    width: 90%;
   }
   .hero-book-btn {
-    top: 88%;
-    left: 50%;
     font-size: 14px;
-    width: 70%;
+    left: 50%;
     max-width: 280px;
     padding: 9px 15px;
+    top: 68%;
     transform: translateX(-50%);
+    width: 45%;
   }
 }
 

@@ -92,7 +92,7 @@ const HomeServiceSection = () => {
           left: nextScrollLeft,
           behavior: 'smooth',
         });
-      }, 1000); 
+      }, 2000); 
 
       return intervalId; 
     };
@@ -102,7 +102,7 @@ const HomeServiceSection = () => {
       const timerId = setTimeout(() => {
         womenIntervalId = autoScroll(scrollRefWomen);
         menIntervalId = autoScroll(scrollRefMen);
-      }, 100); 
+      }, 200); 
 
       return () => {
         clearTimeout(timerId); 
