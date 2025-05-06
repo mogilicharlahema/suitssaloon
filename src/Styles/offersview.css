@@ -270,9 +270,9 @@
     .offer-cta-button {
       font-size: 1rem;
       padding: 10px 25px;
-      width: 96%;
-      margin-top: 3px;
-      margin-left: 5px;
+      width: 88%;
+      margin-top: -9px;
+      margin-left: 18px;
     }
     .servicess-details {
       flex-basis: 100%;

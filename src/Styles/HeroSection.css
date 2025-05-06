@@ -143,8 +143,8 @@
     height: 310px;
   }
    .hero-content {
-    margin-left: 7%; 
-    margin-top: 96px;
+    margin-left: 7%;
+    margin-top: -26px;
     width: 92%;
     max-width: 280px; 
   }
@@ -155,8 +155,8 @@
     width: 55%;
     max-width: 248px;
     font-size: 13px;
-    padding: 8px 14px;
+    padding: 12px 14px;
    
-    transform: translateX(-50%);
+   
   }
 }
