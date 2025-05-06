@@ -16,6 +16,7 @@
 }
 
 .check-btn {
+  
     background-color: #403D2A;
     color: #E1B650;
     border: none;
@@ -25,13 +26,12 @@
     text-align: center;
     white-space: nowrap;
     position: absolute;
-    left: 37%;
+    left: 22%;
     width: 170px;
     max-width: 90%;
     padding: 20px 20px;
     font-size: 1.1rem;
-    bottom: 25%;
-   
+    bottom: 27%;
 }
 
  
@@ -62,7 +62,7 @@
         font-size: 0.9rem;
         bottom: 8%;
         border-radius: 30px;
-        margin-left: -48px;
+        margin-left: -34px;
     }
 }
 
